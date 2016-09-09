@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="TF2_2010_Debug|Win32">
+      <Configuration>TF2_2010_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5A80CEE1-7649-11E6-B95F-A0F3C1004345}</ProjectGuid>
+    <RootNamespace>TF2SchemaTools.ext.2.tf2.2010.Debug</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='TF2_2010_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='TF2_2010_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='TF2_2010_Debug|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='TF2_2010_Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='TF2_2010_Debug|Win32'">true</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='TF2_2010_Debug|Win32'">TF2SchemaTools.ext.2.tf2.2010.Debug</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='TF2_2010_Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/D_ITERATOR_DEBUG_LEVEL=0 /DSE_DODS=8 /DSE_HL2DM=7 /DSE_PORTAL2=17 /DSE_EYE=5 /DSE_NUCLEARDAWN=13 /DSE_INSURGENCY=19 /DSE_LEFT4DEAD2=15 /DSE_BLADE=18 /DSE_ORANGEBOX=3 /DSE_CSGO=20 /DSE_BMS=10 /DSE_CONTAGION=14 /DSE_EPISODEONE=1 /DSE_SDK2013=9 /DSE_DOTA=21 /DSE_DARKMESSIAH=2 /DSE_LEFT4DEAD=12 /DSE_BLOODYGOODTIME=4 /DSE_ALIENSWARM=16 /DSE_CSS=6 /DSE_TF2=11 /DSOURCE_ENGINE=11 /TP</AdditionalOptions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);G:\SourceMod\sourcemod\public;G:\SourceMod\TF2SchemaTools\;G:\SourceMod\TF2SchemaTools\sdk;G:\SourceMod\sourcemod\public;G:\SourceMod\sourcemod\public\extensions;G:\SourceMod\sourcemod\sourcepawn\include;G:\SourceMod\sourcemod\public\amtl\amtl;G:\SourceMod\sourcemod\public\amtl;G:\SourceMod\mmsource-1.10\core;G:\SourceMod\mmsource-1.10\core\sourcehook;G:\SourceMod\hl2sdk-sdk2013\public;G:\SourceMod\hl2sdk-sdk2013\public\engine;G:\SourceMod\hl2sdk-sdk2013\public\mathlib;G:\SourceMod\hl2sdk-sdk2013\public\vstdlib;G:\SourceMod\hl2sdk-sdk2013\public\tier0;G:\SourceMod\hl2sdk-sdk2013\public\tier1;G:\SourceMod\hl2sdk-sdk2013\thirdparty\protobuf-2.3.0\src;G:\SourceMod\hl2sdk-sdk2013\public\game\server;G:\SourceMod\hl2sdk-sdk2013\public\toolframework;G:\SourceMod\hl2sdk-sdk2013\game\shared;G:\SourceMod\hl2sdk-sdk2013\common</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;DEBUG;_DEBUG;WIN32;_WINDOWS;RAD_TELEMETRY_DISABLED;COMPILER_MSVC;COMPILER_MSVC32</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <OmitFramePointer>true</OmitFramePointer>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_ITERATOR_DEBUG_LEVEL=0;DEBUG;_DEBUG;WIN32;_WINDOWS;SE_DODS=8;SE_HL2DM=7;SE_PORTAL2=17;SE_EYE=5;SE_NUCLEARDAWN=13;SE_INSURGENCY=19;SE_LEFT4DEAD2=15;SE_BLADE=18;SE_ORANGEBOX=3;SE_CSGO=20;SE_BMS=10;SE_CONTAGION=14;SE_EPISODEONE=1;SE_SDK2013=9;SE_DOTA=21;SE_DARKMESSIAH=2;SE_LEFT4DEAD=12;SE_BLOODYGOODTIME=4;SE_ALIENSWARM=16;SE_CSS=6;SE_TF2=11;SOURCE_ENGINE=11;RAD_TELEMETRY_DISABLED;COMPILER_MSVC;COMPILER_MSVC32</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\SourceMod\sourcemod\public;G:\SourceMod\TF2SchemaTools\;G:\SourceMod\TF2SchemaTools\sdk;G:\SourceMod\sourcemod\public;G:\SourceMod\sourcemod\public\extensions;G:\SourceMod\sourcemod\sourcepawn\include;G:\SourceMod\sourcemod\public\amtl\amtl;G:\SourceMod\sourcemod\public\amtl;G:\SourceMod\mmsource-1.10\core;G:\SourceMod\mmsource-1.10\core\sourcehook;G:\SourceMod\hl2sdk-sdk2013\public;G:\SourceMod\hl2sdk-sdk2013\public\engine;G:\SourceMod\hl2sdk-sdk2013\public\mathlib;G:\SourceMod\hl2sdk-sdk2013\public\vstdlib;G:\SourceMod\hl2sdk-sdk2013\public\tier0;G:\SourceMod\hl2sdk-sdk2013\public\tier1;G:\SourceMod\hl2sdk-sdk2013\thirdparty\protobuf-2.3.0\src;G:\SourceMod\hl2sdk-sdk2013\public\game\server;G:\SourceMod\hl2sdk-sdk2013\public\toolframework;G:\SourceMod\hl2sdk-sdk2013\game\shared;G:\SourceMod\hl2sdk-sdk2013\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies);kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;G:\SourceMod\hl2sdk-sdk2013\lib\public\tier0.lib;G:\SourceMod\hl2sdk-sdk2013\lib\public\tier1.lib;G:\SourceMod\hl2sdk-sdk2013\lib\public\vstdlib.lib;G:\SourceMod\hl2sdk-sdk2013\lib\public\mathlib.lib;G:\SourceMod\hl2sdk-sdk2013\lib\public\2010\libprotobuf.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetFileName)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries);libcmt</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\sdk\smsdk_ext.cpp" />
+    <ClCompile Include="..\extension.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
