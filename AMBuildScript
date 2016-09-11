@@ -162,6 +162,7 @@ class ExtensionConfig(object):
 #      '_vsnprintf=vsnprintf',
       'HAVE_STDINT_H',
       'GNUC',
+      '_GLIBCXX_USE_CXX11_ABI=0', # for libprotobuf linker compat
     ]
     cxx.cflags += [
       '-pipe',
@@ -185,6 +186,8 @@ class ExtensionConfig(object):
       '-Wno-sign-compare', # for tier1/byteswap.h
       
       '-fno-gnu-unique', # avoid the STB_GNU_UNIQUE 'feature'
+      
+      '-Wno-misleading-indentation', # for protobufs
     ]
     cxx.cxxflags += [
       '-std=c++14',
@@ -195,11 +198,17 @@ class ExtensionConfig(object):
       '-fvisibility-inlines-hidden',
       '-Wabi',
       
+      '-fabi-version=0',
+      '-fabi-compat-version=2',
+      
       '-Wno-reorder', # for tier1/utlrbtree.h
     ]
     cxx.linkflags += [
       '-m32',
       '-Wl,--no-undefined',
+      
+      '-fabi-version=0',
+      '-fabi-compat-version=2',
     ]
     
     if builder.options.sigsegv == '1':
@@ -287,7 +296,7 @@ class ExtensionConfig(object):
     cxx.linkflags += [
       '-Wl,--exclude-libs,ALL',
       '-lm',
-    #  '-lpthread',
+      '-lpthread',
       '-ldl',
     ]
     if cxx.vendor == 'gcc':

@@ -5,6 +5,12 @@ projectName = 'TF2SchemaTools'
 
 # smsdk_ext.cpp will be automatically added later
 sourceFiles = [
+  os.path.join('proto-cxx', 'base_gcmessages.pb.cc'),
+  os.path.join('proto-cxx', 'econ_gcmessages.pb.cc'),
+  os.path.join('proto-cxx', 'gcsdk_gcmessages.pb.cc'),
+  os.path.join('proto-cxx', 'gcsystemmsgs.pb.cc'),
+  os.path.join('proto-cxx', 'steammessages.pb.cc'),
+  os.path.join('proto-cxx', 'tf_gcmessages.pb.cc'),
   'extension.cpp',
 ]
 
